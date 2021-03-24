@@ -40,4 +40,14 @@
       <mirrorOf>m.g.o-public</mirrorOf>
     </mirror>
   </mirrors>
+  <proxies>   
+    <proxy>
+      <id>optional</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>19.12.80.237</host>
+      <port>83</port>
+      <nonProxyHosts>localhost,19.0.0.0/8,10.233.64.0/18,10.233.0.0/18,ks-jenkins.kubesphere-devops-system.svc,169.254.25.10</nonProxyHosts>
+   </proxy>
+  </proxies>  
 </settings>
