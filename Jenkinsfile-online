@@ -18,6 +18,7 @@ pipeline {
         GITHUB_ACCOUNT = 'helen1990817'
         APP_NAME = 'devops-java-sample'
         SONAR_CREDENTIAL_ID='sonar-token'
+        TAG_NAME = 'v2.0.1'
     }
 
     stages {
