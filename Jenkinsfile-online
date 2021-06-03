@@ -80,7 +80,7 @@ pipeline {
                     sh 'git config --global user.name "helen1990817" '
                     sh 'git config --global http.proxy "19.12.64.237:83" '
                     sh 'git tag -a $TAG_NAME -m "$TAG_NAME" '
-                    sh 'git push https://$GIT_USERNAME:$GIT_PASSWORD@github.com/$GITHUB_ACCOUNT/devops-java-sample.git --tags --ipv4'
+                    sh 'git remote set-url origin http://$GIT_USERNAME:$GIT_PASSWORD@github.com/$GITHUB_ACCOUNT/devops-java-sample.git --tags --ipv4'
                   }
                   
                    withCredentials([usernamePassword(passwordVariable : 'DOCKER_PASSWORD' ,usernameVariable : 'DOCKER_USERNAME' ,credentialsId : "$DOCKER_CREDENTIAL_ID" ,)]) {
